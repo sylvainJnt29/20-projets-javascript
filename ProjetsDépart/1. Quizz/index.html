@@ -9,8 +9,119 @@
 </head>
 <body>
     
-    
+    <!-- Mise en place du questionnaire -->
+    <h1>Quizz de culture générale !</h1>
+    <div id="miseEnPlace">
+        <form id="quizz">
+            <fieldset>
+                <div id="question">
+                    <h2>Qui est l'empereur de France le 2 Décembre 1804?</h2>
 
+                        <div class="reponse"> 
+                            <input type="radio" name="question1" value="clovis" id="clovis" checked>
+                            <label for="clovis">Clovis</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question1" value="lincoln" id="lincoln">
+                            <label for="lincoln">Abraham Lincoln</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question1" value="bonaparte" id="bonaparte">
+                            <label for="bonaparte">Napoléon Bonaparte</label>
+                        </div>
+
+                </div>
+            </fieldset>    
+
+            <fieldset>
+                <div id="question">
+                    <h2>Quelle est la date d'indépendance des Etats-Unis?</h2>
+                    <div class="choix">
+                        <div class="reponse">
+                            <input type="radio" name="question2" value="1776" id="1776" checked>
+                            <label for="1776">4 Juillet 1776</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question2" value="1856" id="1856">
+                            <label for="1856">18 Avril 1856</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question2" value="1925" id="1925">
+                            <label for="1925">30 Juin 1925</label>
+                        </div>
+                    </div>                           
+                </div>
+            </fieldset>
+
+            <fieldset>    
+                <div id="question">
+                    <h2>La chute de l'empire Romain se situe en ?</h2>
+                    <div class="choix">
+                        <div class="reponse">
+                            <input type="radio" name="question3" value="15" id="15" checked>
+                            <label for="15">15 après J-C</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question3" value="395" id="395">
+                            <label for="395">395 après J-C</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question3" value="-740" id="-740">
+                            <label for="-740">-740 avant J.C</label>  
+                        </div>
+                    </div>      
+                </div>
+            </fieldset>
+
+            <fieldset>    
+                <div id="question">
+                    <h2>Quelle est la capitale de la Slovénie?</h2>
+                    <div class="choix">
+                        <div class="reponse">
+                            <input type="radio" name="question4" value="ljubjana" id="ljubjana" checked>
+                            <label for="ljubjana">Ljubjana</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question4" value="belgrade" id="belgrade">
+                            <label for="belgrade">Belgrade</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question4" value="bratislava" id="bratislava">
+                            <label for="bratislava">Bratislava</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>   
+                <div id="question">
+                    <h2>Combien d'habitants compte l'Irlande en 2020?</h2>
+                    <div class="choix">
+                        <div class="reponse">
+                            <input type="radio" name="question5" value="1.365" id="1.365" checked>
+                            <label for="1.365">1.365 millions</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question5" value="21" id="21">
+                            <label for="21">21 millions</label>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="question5" value="4.9" id="4.9">
+                            <label for="4.9">4.9 millions</label>
+                        </div>
+                    </div>  
+                </div>
+            </fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Validez !">
+
+        </form>
+
+    <div id="blocReponse">
+        <h3>Validez pour voir votre résultat</h3>
+        <div id="texteReponse"> </div>
+        <div id="noteReponse"> </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
